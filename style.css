@@ -1,0 +1,120 @@
+/* ---------- General ---------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    padding:40px;
+    text-align:center;
+}
+
+h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.intro{
+    max-width:800px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:50px;
+}
+
+/* ---------- Color Cards ---------- */
+
+.colors{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.card{
+    background:#fff;
+    color:#000;
+    border-radius:15px;
+    padding:30px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px white;
+}
+
+/* ---------- Color Circles ---------- */
+
+.circle{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.red{
+    background:#ff0000;
+}
+
+.orange{
+    background:#ff7f00;
+}
+
+.yellow{
+    background:#ffd700;
+}
+
+.green{
+    background:#00c853;
+}
+
+.blue{
+    background:#1e88e5;
+}
+
+.indigo{
+    background:#3f51b5;
+}
+
+.violet{
+    background:#8e24aa;
+}
+
+/* ---------- Text ---------- */
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+/* ---------- Button ---------- */
+
+button{
+    background:black;
+    color:white;
+    border:2px solid white;
+    padding:15px 35px;
+    font-size:20px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:white;
+    color:black;
+}.selected{
+    border:4px solid black;
+    transform:scale(1.08);
+    box-shadow:0 0 25px white;
+}
